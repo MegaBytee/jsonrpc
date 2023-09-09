@@ -16,13 +16,13 @@ Supports:
 - custom http client (e.g. proxy, tls config)
 - custom headers (e.g. basic auth)
 
+THIS VERSION IS FORK FROM "github.com/ybbus/jsonrpc/v3"
 ## Installation
 
 ```sh
-go get -u github.com/ybbus/jsonrpc/v3
+go get -u github.com/MegaBytee/jsonrpc
 ```
 
-(You can find v2 and v1 in a separate branch.)
 
 ## Getting started
 Let's say we want to retrieve a person struct with a specific id using rpc-json over http.
@@ -34,7 +34,7 @@ package main
 
 import (
 	"context"
-	"github.com/ybbus/jsonrpc/v3"
+	"github.com/MegaBytee/jsonrpc"
 )
 
 type Person struct {
